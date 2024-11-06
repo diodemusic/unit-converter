@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>Unit Converter</h1>
+
+        <div class="navbar">
+            <a class="active" href="/length.html">length</a>
+            <a href="/weight.html">weight</a>
+            <a href="/temperature.html">temperature</a>
+        </div>
+
+        <form id="convertForm">
+            <label for="length">Enter the length to convert</label><br>
+            <input type="text" id="length" name="length"><br>
+
+            <label for="unitFrom">Convert from</label>
+            <select name="unitFrom" id="unitFrom">
+                <option value="millimeters">millimeters</option>
+                <option value="centimeters">centimeters</option>
+                <option value="meters">meters</option>
+                <option value="kilometers">kilometers</option>
+                <option value="inches">inches</option>
+                <option value="feet">feet</option>
+                <option value="yards">yards</option>
+                <option value="miles">miles</option>
+            </select>
+
+            <label for="unitTo">to</label>
+            <select name="unitTo" id="unitTo">
+                <option value="millimeters">millimeters</option>
+                <option value="centimeters">centimeters</option>
+                <option value="meters">meters</option>
+                <option value="kilometers">kilometers</option>
+                <option value="inches">inches</option>
+                <option value="feet">feet</option>
+                <option value="yards">yards</option>
+                <option value="miles">miles</option>
+            </select>
+
+            <input id="convertButton" type="submit" value="Convert" onclick="convertLength()">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
